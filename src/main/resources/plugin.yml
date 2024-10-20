@@ -1,0 +1,7 @@
+name: KitFix
+version: '${version}'
+author: Preva1l
+main: info.preva1l.kitfix.KitFix
+api-version: '1.19'
+depend:
+  - ContinuumKits
