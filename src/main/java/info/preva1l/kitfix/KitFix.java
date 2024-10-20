@@ -5,9 +5,9 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
  */
 public final class KitFix extends JavaPlugin implements Listener {
     public static final ScheduledExecutorService service = new ScheduledThreadPoolExecutor(1);
-    public static final List<UUID> cooldown = new ArrayList<>();
+    public static final List<UUID> cooldown = new CopyOnWriteArrayList<>();
 
     @Override
     public void onEnable() {
