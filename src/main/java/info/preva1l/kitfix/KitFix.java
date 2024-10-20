@@ -32,6 +32,6 @@ public final class KitFix extends JavaPlugin implements Listener {
         cooldown.add(player.getUniqueId());
         service.schedule(() -> {
             cooldown.remove(player.getUniqueId());
-        }, 500, TimeUnit.MILLISECONDS);
+        }, 3, TimeUnit.SECONDS);
     }
 }
